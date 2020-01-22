@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ReturnScript : MonoBehaviour
 { 
-    
+    public float number1;
+    public float number2;
     void Start()
     {
         keinReturn();
@@ -37,4 +38,8 @@ public class ReturnScript : MonoBehaviour
             string stringR = "HeyHo";
             return stringR;
         }
+    void Update()
+    {
+        Debug.Log(Random.Range(number1, number2) + Random.Range(number1, number2));
+    }
 }
